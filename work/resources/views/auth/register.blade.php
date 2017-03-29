@@ -38,13 +38,13 @@
                             </div>
                         </div>
 
-                        <div class="form-group{{ $errors->has('rols_tipo') ? ' has-error' : '' }}">
-                            <label for="rols_tipo" class="col-md-4 control-label">Tipo de Usuario</label>
+                        <div class="form-group{{ $errors->has('rols_id') ? ' has-error' : '' }}">
+                            <label for="rols_id" class="col-md-4 control-label">Tipo de Usuario</label>
                             <div class="col-md-6">
-                                <input id="rols_tipo" type="rols_tipo" class="form-control" name="rols_tipo" value="{{ old('rols_tipo') }}" required>
-                                @if ($errors->has('rols_tipo'))
+                                <input id="rols_id" type="rols_tipo" class="form-control" name="rols_id" value="{{ old('rols_id') }}" required>
+                                @if ($errors->has('rols_id'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('rols_tipo') }}</strong>
+                                        <strong>{{ $errors->first('rols_id') }}</strong>
                                     </span>
                                 @endif
                             </div>
